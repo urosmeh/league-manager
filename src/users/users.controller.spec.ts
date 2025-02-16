@@ -14,7 +14,7 @@ const userMock: User = {
 // https://www.youtube.com/watch?v=XbSZnGCJB2I&list=PL4GnUdxYjMlO7wYGGf-bDR7B9k3uUxfR6&index=79
 describe('UsersController', () => {
   let controller: UsersController;
-  let service: UsersService;
+  // let service: UsersService; add back
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
@@ -31,7 +31,7 @@ describe('UsersController', () => {
     }).compile();
 
     controller = module.get<UsersController>(UsersController);
-    service = module.get<UsersService>(UsersService);
+    // service = module.get<UsersService>(UsersService);
   });
 
   it('should be defined', () => {
